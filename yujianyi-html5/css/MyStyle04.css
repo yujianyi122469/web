@@ -1,0 +1,12 @@
+#divId{
+    color: crimson;
+}
+
+/*设置P标签的颜色*/
+#divId p{
+    color: aqua;
+}
+
+#divSpan span{
+    color: blue;
+}
