@@ -1,0 +1,16 @@
+/*body{*/
+    /*background-color: darkgray;*/
+/*}*/
+
+body{
+
+    background-image: url("微信图片_20190327213056.jpg");
+    background-attachment: fixed;
+}
+
+p{
+    width: 150px;
+    /*内边距*/
+    padding: 10px;
+    background-color: blue;
+}
