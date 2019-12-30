@@ -1,0 +1,17 @@
+#tb{
+    border-collapse: collapse;
+    width: 500px;
+}
+#tb td,#tb th{
+    border: 1px solid fuchsia ;
+    padding: 1px;
+}
+#tb th{
+    text-align: right;
+    background-color: aqua;
+    color: chartreuse;
+}
+#tb tr.alt{
+    color: black;
+    background-color: aquamarine;
+}
