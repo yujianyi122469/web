@@ -1,0 +1,30 @@
+div img{
+    width: 100px;
+    height: 100px;
+    background-color: coral;
+    transition: width 2s,height 2s,transform 2s;
+    position: relative;
+    animation: anim 5s infinite;
+}
+
+div img:hover{
+    width: 200px;
+    height: 200px;
+    transform: rotate(720deg);
+}
+#did{
+    width: 100px;
+    height: 100px;
+    background-color: fuchsia;
+    position: relative;
+    animation: anim 5s infinite;
+    animation-delay: 1s;
+}
+@keyframes anim {
+    0%{left: 0px;top: 0px;}
+    25%{left: 200px;top: 0px;}
+    50%{left: 200px;top: 200px;}
+    75%{left: 0px;top: 200px;}
+    100%{left: 0px;top: 0px;}
+
+}
