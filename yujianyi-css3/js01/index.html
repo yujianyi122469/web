@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js练习</title>
+</head>
+<body>
+<div id="js01_divid1">
+    <button id="js01_btn1" onclick="demo()">按钮</button>
+</div>
+<script>
+    function demo() {
+        alert("hello")
+    }
+</script>
+<div id="js01_divid2">
+    <button id="js01_btn2">按钮</button>
+</div>
+<script>
+    var btn1 = document.getElementById("js01_btn2");
+    btn1.onclick = function () {
+        alert("hello DOM0级事件处理程序");
+        // btn1.onclick = null;
+    }
+</script>
+<div id="js01_divid3">
+    <button id="js01_btn3">按钮</button>
+</div>
+<script>
+    // var btn1  = document.getElementById("js01_btn2")
+    //     .addEventListener("click",function () {alert("hello DOM2级事件处理程序")})
+    var btn1 = document.getElementById("js01_btn3").addEventListener("click", demo);
+    var btn2 = document.getElementById("js01_btn3").addEventListener("click", demo1);
+    var btn3 = document.getElementById("js01_btn3").addEventListener("click", demo2);
+
+    function demo() {
+        alert("hello DOM2级事件处理程序1")
+    }
+
+    function demo1() {
+        alert("hello DOM2级事件处理程序2")
+    }
+
+    function demo2() {
+        alert("hello DOM2级事件处理程序3")
+    }
+
+    // 移除事件
+    btn1.removeEventListener("click", demo1)
+</script>
+
+</body>
+</html>
