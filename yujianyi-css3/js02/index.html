@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>什么是对象</title>
+</head>
+<body>
+    <script>
+        // 1
+        people = new Object();
+        people.name = "yujianyi";
+        people.age = "10";
+        document.write("name:"+people.name+",age:"+people.age);
+
+        //2
+        people = {name:"yujianyi",age:"30"};
+        document.write("name:"+people.name+",age:"+people.age);
+
+        //3
+        function people(name, age) {
+            this.name = name;
+            this.age = age;
+        }
+        son = new people("yujianyi",20);
+        document.write("name:"+people.name+",age:"+people.age);
+
+    </script>
+</body>
+</html>
