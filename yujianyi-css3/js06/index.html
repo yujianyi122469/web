@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>history对象</title>
+</head>
+<body>
+<!--<button id="js06_btn1" onclick="goback()">按钮</button>-->
+<!--<script>-->
+    <!--function goback() {-->
+        <!--history.back();-->
+    <!--}-->
+<!--</script>-->
+<form>
+    <input type="text" id="username">
+    <button id="btn1" onclick="safe()">测试</button>
+</form>
+<script>
+    function safe() {
+        var name = document.getElementById("username").value;
+        if (name === "hello") {
+            history.go(-1);
+        } else {
+            alert("输入错误");
+        }
+    }
+</script>
+</body>
+</html>
