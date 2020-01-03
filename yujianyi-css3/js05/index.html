@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>计时事件</title>
+</head>
+<body>
+<button id="js05_btn1" onclick="stopTime()">停止</button>
+<button id="is05_btn2" onclick="contiue()">开始</button>
+<p id="js05_time"></p>
+<script>
+    var mytime = setInterval(function () {
+        getTime();
+    }, 1000);
+
+    function contiue() {
+        var number = mytime;
+        number=setInterval(function () {
+            getTime();
+        }, 1000);
+    }
+
+    function getTime() {
+        var d = new Date();
+        var t = d.toLocaleTimeString();
+        document.getElementById("js05_time").innerHTML = t;
+    }
+
+    function stopTime() {
+        clearInterval(mytime);
+    }
+</script>
+    <button onclick="mywin()">测试</button>
+    <script>
+        function mywin() {
+            alert("hello");
+            var win = setTimeout(function () {
+                mywin()
+            },3000);
+        }
+    </script>
+</body>
+</html>
