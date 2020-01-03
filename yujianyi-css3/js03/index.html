@@ -15,6 +15,7 @@
         m = checkTime(m);
         s = checkTime(s);
         document.getElementById("js03_divid").innerHTML = h + ":" + m + ":" + s;
+        // 实现实时刷新
         setTimeout(function () {
             startTime();
         },1000);
